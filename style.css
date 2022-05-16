@@ -7,7 +7,9 @@
 }
 body {
   background: var(--branding-color-1);
+  margin-left: 0;
 }
+
 .container {
   margin: 0;
   padding: 0;
@@ -19,7 +21,6 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: var(--branding-color-1);
 }
 .box {
   position: relative;
