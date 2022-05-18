@@ -5,24 +5,23 @@
   --heading-font-family: "Playfair Display SC", serif;
   --sub-heading-font-family: "Poppins", sans-serif;
 }
-
-body {
-  background: var(--branding-color-1);
-  padding: 0;
-}
-h1 {
-  background-color: var(--branding-color-2);
-  text-align: center;
-  font-family: var(--heading-font-family);
-}
-
-.container-fluid {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: var(--sub-heading-font-family);
 }
-.row {
+body {
+  background: var(--branding-color-1);
+}
+h1 {
+  background-color: var(--branding-color-2);
+  text-align: center;
+  font-family: var(--heading-font-family);
+  display: block;
+}
+
+.container-fluid {
   display: flex;
   justify-content: center;
   align-items: center;
