@@ -5,8 +5,10 @@
   --heading-font-family: "Playfair Display SC", serif;
   --sub-heading-font-family: "Poppins", sans-serif;
 }
+
 body {
   background: var(--branding-color-1);
+  padding: 0;
 }
 h1 {
   background-color: var(--branding-color-2);
@@ -14,7 +16,7 @@ h1 {
   font-family: var(--heading-font-family);
 }
 
-.container {
+.container-fluid {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
