@@ -19,8 +19,8 @@ h1 {
   background-color: var(--branding-color-2);
   text-align: center;
   font-family: var(--heading-font-family);
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   color: var(--branding-color-4);
   text-transform: uppercase;
 }
@@ -29,7 +29,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 .box {
   position: relative;
@@ -116,7 +116,7 @@ h1 {
   padding: 10px 20px;
   background: var(--branding-color-2);
   color: var(--branding-color-4);
-  border-radius: 5px 40px;
+  border-radius: 1px 40px;
   font-weight: 500;
   font-size: 1.25em;
   text-transform: uppercase;
