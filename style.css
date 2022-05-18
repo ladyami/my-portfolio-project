@@ -1,7 +1,8 @@
 :root {
   --branding-color-1: #260c1a;
-  --branding-color-2: #c5d86d;
-  --branding-color-3: #f05d23;
+  --branding-color-2: #e8cebf;
+  --branding-color-3: #4f4846;
+  --branding-color-4: #143f5c;
   --heading-font-family: "Playfair Display SC", serif;
   --sub-heading-font-family: "Poppins", sans-serif;
 }
@@ -12,13 +13,16 @@
   font-family: var(--sub-heading-font-family);
 }
 body {
-  background: var(--branding-color-1);
+  background: var(--branding-color-4);
 }
 h1 {
   background-color: var(--branding-color-2);
   text-align: center;
   font-family: var(--heading-font-family);
-  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: var(--branding-color-4);
+  text-transform: uppercase;
 }
 
 .container-fluid {
@@ -32,7 +36,7 @@ h1 {
   width: 350px;
   height: 350px;
   margin: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--branding-color-4);
   border-radius: 50%;
   overflow: hidden;
 }
@@ -42,8 +46,8 @@ h1 {
   inset: -10px 140px;
   background: linear-gradient(
     315deg,
-    var(--branding-color-2),
-    var(--branding-color-3)
+    var(--branding-color-1),
+    var(--branding-color-2)
   );
   transition: 0.5s;
   animation: animate 4s linear infinite;
@@ -63,14 +67,14 @@ h1 {
   content: "";
   position: absolute;
   inset: 6px;
-  background: var(--branding-color-1);
+  background: var(--branding-color-4);
   border-radius: 50%;
   z-index: 1;
 }
 .content {
   position: absolute;
   inset: 30px;
-  border: 6px solid black;
+  border: 6px solid var(--branding-color-4);
   z-index: 3;
   border-radius: 50%;
   overflow: hidden;
@@ -110,8 +114,8 @@ h1 {
   position: relative;
   margin-top: 10px;
   padding: 10px 20px;
-  background: var(--branding-color-3);
-  color: var(--branding-color-2);
+  background: var(--branding-color-2);
+  color: var(--branding-color-4);
   border-radius: 5px 40px;
   font-weight: 500;
   font-size: 1.25em;
