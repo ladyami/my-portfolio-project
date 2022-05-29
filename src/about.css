@@ -50,9 +50,10 @@ a {
   text-transform: uppercase;
   text-decoration: none;
 }
-.image {
-  text-align: center;
-  border-radius: 30px;
+#my-img {
+  border-radius: 20px;
+  width: 400px;
+  height: auto;
 }
 .container {
   padding: 100px 20px;
@@ -104,6 +105,61 @@ a {
   color: var(--branding-color-3);
   text-transform: lowercase;
 }
+.certificate {
+  padding-left: 25px;
+  color: var(--branding-color-3);
+  font-family: var(--sub-heading-font-family);
+}
+.work-shop {
+  font-size: 17px;
+  color: var(--branding-color-6);
+  font-family: var(--heading-font-family);
+  margin-bottom: 15px;
+}
+.skills-heading {
+  font-size: 35px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 25px;
+  font-family: var(--heading-font-family);
+  color: var(--branding-color-5);
+}
+h3 {
+  font-size: 17px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  color: var(--branding-color-6);
+  font-family: var(--sub-heading-font-family);
+}
+#skill-img {
+  width: 150px;
+  height: 100px;
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+#skill-img:hover {
+  transform: translateY(-10px);
+}
 
 @media (max-width: 900px) {
+  html {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  #my-img {
+    width: 80%;
+    height: auto;
+  }
+  #skill-img {
+    width: 80%;
+    height: auto;
+  }
+  .education {
+    padding: 0;
+  }
+  .work-shop {
+    margin-top: 10px;
+  }
 }
