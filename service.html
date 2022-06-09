@@ -71,9 +71,9 @@
                 <div class="service">
                   <div class="content">
                     <span class="icon">
-                      <i class="fa-solid fa-paintbrush"></i>
+                      <i class="fa-brands fa-accusoft"></i>
                     </span>
-                    <h3 class="service-name">web design</h3>
+                    <h3 class="service-name">web developer</h3>
                     <p class="info">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Enim saepe sed excepturi reiciendis rem dolorum laboriosam
@@ -88,9 +88,9 @@
                 <div class="service">
                   <div class="content">
                     <span class="icon">
-                      <i class="fa-solid fa-paintbrush"></i>
+                      <i class="fa-solid fa-arrow-down-wide-short"></i>
                     </span>
-                    <h3 class="service-name">web design</h3>
+                    <h3 class="service-name">responsive web</h3>
                     <p class="info">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Enim saepe sed excepturi reiciendis rem dolorum laboriosam
@@ -107,9 +107,9 @@
                 <div class="service">
                   <div class="content">
                     <span class="icon">
-                      <i class="fa-solid fa-paintbrush"></i>
+                      <i class="fa-brands fa-react"></i>
                     </span>
-                    <h3 class="service-name">web design</h3>
+                    <h3 class="service-name">react</h3>
                     <p class="info">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Enim saepe sed excepturi reiciendis rem dolorum laboriosam
@@ -124,9 +124,9 @@
                 <div class="service">
                   <div class="content">
                     <span class="icon">
-                      <i class="fa-solid fa-paintbrush"></i>
+                      <i class="fa-solid fa-shirt"></i>
                     </span>
-                    <h3 class="service-name">web design</h3>
+                    <h3 class="service-name">fashion</h3>
                     <p class="info">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Enim saepe sed excepturi reiciendis rem dolorum laboriosam
@@ -141,9 +141,9 @@
                 <div class="service">
                   <div class="content">
                     <span class="icon">
-                      <i class="fa-solid fa-paintbrush"></i>
+                      <i class="fa-solid fa-plane-departure"></i>
                     </span>
-                    <h3 class="service-name">web design</h3>
+                    <h3 class="service-name">air cargo</h3>
                     <p class="info">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Enim saepe sed excepturi reiciendis rem dolorum laboriosam
@@ -157,7 +157,129 @@
             </div>
           </div>
         </div>
+        <section class="contact-me">
+          <h1 class="heading">contact <span class="me">me</span></h1>
+          <div class="section-info">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="box-container">
+                  <h2>get <span class="in">in</span> touch</h2>
+                  <p class="touch">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Perspiciatis natus ipsam consequuntur quaerat et laudantium
+                    commodi
+                  </p>
+                  <div class="box">
+                    <i class="fa-solid fa-location-dot" id="icon-contact"></i>
+                    <div class="contact-info">
+                      <h3 class="add">address</h3>
+                      <p>903 Kano, Nigeria</p>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <i class="fa-regular fa-envelope" id="icon-contact"></i>
+                    <div class="contact-info">
+                      <h3 class="mail">email</h3>
+                      <p>aminaoyegoke@protonmail.com</p>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <i class="fa-solid fa-phone" id="icon-contact"></i>
+                    <div class="contact-info">
+                      <h3 class="phone">phone</h3>
+                      <p>+2348125916349</p>
+                    </div>
+                  </div>
+
+                  <div class="link">
+                    <a href="" class="fab fa-linkedin"></a>
+                    <a href="" class="fab fa-github"></a>
+                  </div>
+                </div>
+              </div>
+
+              <form
+                action="https://formspree.io/f/xayvkjdl"
+                method="POST"
+                id="my-form"
+              >
+                <div class="col-md-8">
+                  <div class="input-box">
+                    <label for="name"> Name </label>
+                    <input type="text" id="name" name="name" />
+                  </div>
+                  <div class="input-box">
+                    <label for="Telephone"> Telephone </label>
+
+                    <input
+                      type="number"
+                      id="Telephone-number"
+                      name="Telephone-number"
+                    />
+                  </div>
+                  <div class="input-box">
+                    <label for="email"> Email </label>
+                    <input type="email" id="email" name="email" />
+                  </div>
+                  <div class="input-box">
+                    <label for="Subject">Subject</label>
+                    <input type="text" id="subject" name="subject" />
+                  </div>
+                  <div class="message">
+                    <label for="message"> Message</label>
+
+                    <textarea
+                      name="message"
+                      id="message"
+                      cols="30"
+                      rows="10"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="order">Send</button>
+                </div>
+              </form>
+              <div id="status" class="success"></div>
+            </div>
+          </div>
+        </section>
       </section>
     </div>
+    <script>
+      var form = document.getElementById("my-form");
+
+      async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            Accept: "application/json",
+          },
+        })
+          .then((response) => {
+            if (response.ok) {
+              status.innerHTML = "Thanks for your submission!";
+              form.reset();
+            } else {
+              response.json().then((data) => {
+                if (Object.hasOwn(data, "errors")) {
+                  status.innerHTML = data["errors"]
+                    .map((error) => error["message"])
+                    .join(", ");
+                } else {
+                  status.innerHTML =
+                    "Oops! There was a problem submitting your form";
+                }
+              });
+            }
+          })
+          .catch((error) => {
+            status.innerHTML = "Oops! There was a problem submitting your form";
+          });
+      }
+      form.addEventListener("submit", handleSubmit);
+    </script>
   </body>
 </html>
