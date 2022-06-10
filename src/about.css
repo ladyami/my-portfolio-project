@@ -2,9 +2,10 @@
   --branding-color-1: #260c1a;
   --branding-color-2: #dc552c;
   --branding-color-3: #f5feff;
-  --branding-color-4: #143f5c;
+  --branding-color-4: hsl(204, 64%, 22%);
   --branding-color-5: #404969;
-  --branding-color-6: #b8ae32;
+  --branding-color-6: #ffffff;
+  --branding-color-7: #b8ae32;
   --heading-font-family: "Playfair Display SC", serif;
   --sub-heading-font-family: "Poppins", sans-serif;
 }
@@ -131,22 +132,45 @@ a {
   color: var(--branding-color-2);
 }
 h3 {
-  font-size: 17px;
+  font-size: 15px;
   text-transform: uppercase;
   text-align: center;
-  padding: 10px;
-  color: var(--branding-color-5);
+  padding: 5px;
+  color: var(--branding-color-3);
   font-family: var(--sub-heading-font-family);
 }
-#skill-img {
-  width: 150px;
-  height: 100px;
-  border-radius: 10px;
-  transition: transform 0.5s;
+i {
+  align-items: center;
+  font-size: 60px;
+  color: var(--branding-color-3);
 }
-#skill-img:hover {
-  transform: translateY(-10px);
+.box {
+  position: relative;
+  margin-top: 30px;
+  background-color: var(--branding-color-5);
+  border-radius: 0;
+  padding: 30px 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  z-index: 25;
+  text-align: center;
 }
+.box:hover {
+  background-color: var(--branding-color-2);
+  transition: ease-in-out 0.3s;
+}
+.design {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translate(40% -40%);
+  width: 163px;
+  height: 4px;
+  background-color: var(--branding-color-2);
+  border-radius: 30px;
+  transition: all 0.6s;
+}
+
 h4 {
   font-size: 20px;
   font-family: var(--sub-heading-font-family);
@@ -158,12 +182,23 @@ h4 {
 .weather {
   padding-left: 100px;
 }
+.work {
+  color: var(--branding-color-2);
+}
+.color {
+  color: var(--branding-color-2);
+}
 
 @media (max-width: 900px) {
   html {
     align-items: center;
     text-align: center;
     justify-content: center;
+  }
+  #heading-work {
+    font-size: 15px;
+    line-height: 10px;
+    font-weight: 700;
   }
   #img {
     width: 80%;
@@ -173,14 +208,24 @@ h4 {
     width: 80%;
     height: auto;
   }
-  #skill-img {
-    width: 80%;
-    height: auto;
+  .box {
+    width: 100%;
+  }
+  .design {
+    width: 100%;
   }
   .education {
     padding: 0;
   }
   .work-shop {
     margin-top: 10px;
+  }
+  .weather {
+    padding: 0;
+  }
+  #project-responsive {
+    align-items: center;
+    padding: 0;
+    margin: 0;
   }
 }
