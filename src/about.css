@@ -156,7 +156,7 @@ i {
 }
 .box:hover {
   background-color: var(--branding-color-2);
-  transition: ease-in-out 0.3s;
+  transition: all ease-in-out 0.1s;
 }
 .design {
   position: absolute;
