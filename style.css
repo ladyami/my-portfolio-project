@@ -224,3 +224,11 @@ nav.open .nav-content span {
 .nav-content span a:hover i {
   opacity: 1;
 }
+@media (max-width: 900px) {
+  .bar li {
+    margin-right: 0;
+    margin-left: 10px;
+    padding: 7px;
+    font-size: 12px;
+  }
+}
