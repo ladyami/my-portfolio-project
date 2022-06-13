@@ -72,7 +72,7 @@ section {
   color: var(--branding-color-5);
 }
 .view {
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 10px 20px;
   background: var(--branding-color-5);
   color: var(--branding-color-3);
@@ -81,6 +81,10 @@ section {
   font-size: 1.25em;
   text-transform: uppercase;
   text-decoration: none;
+}
+.view:hover {
+  background-color: var(--branding-color-2);
+  color: var(--branding-color-3);
 }
 #img {
   border-radius: 20px;
@@ -219,6 +223,67 @@ h4 {
   color: var(--branding-color-2);
 }
 
+footer {
+  margin: 10px 0;
+  background-color: var(--branding-color-6);
+}
+.work-contact {
+  margin-right: 30px;
+}
+.work-inquiry {
+  margin-left: 30px;
+}
+
+footer .contact-box {
+  background-color: var(--branding-color-6);
+  padding: 40px 0;
+
+  margin-bottom: 45px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+h5 {
+  font-size: 48px;
+  font-family: var(--sub-heading-font-family);
+  color: var(--branding-color-5);
+}
+footer h6 {
+  margin: 0;
+}
+footer .email-link {
+  text-align: center;
+}
+footer .mail {
+  text-decoration: none;
+  color: var(--branding-color-5);
+  font-size: 24px;
+}
+footer .mail:hover {
+  color: var(--branding-color-2);
+}
+footer .social-link {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+footer #in-hub {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  color: var(--branding-color-5);
+  background-color: var(--branding-color-6);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 12px 14px;
+  font-size: 20px;
+  border-radius: 50%;
+  transition: all 100ms ease-in-out;
+}
+footer #in-hub:hover {
+  color: var(--branding-color-2);
+}
+
 @media (max-width: 900px) {
   html {
     align-items: center;
@@ -266,5 +331,10 @@ h4 {
     align-items: center;
     padding: 0;
     margin: 0;
+  }
+  footer .mail {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
   }
 }

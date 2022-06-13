@@ -224,6 +224,22 @@ nav.open .nav-content span {
 .nav-content span a:hover i {
   opacity: 1;
 }
+
+footer .email-link {
+  text-align: center;
+}
+footer .mail {
+  text-decoration: none;
+  color: var(--branding-color-5);
+  font-size: 24px;
+}
+footer .mail:hover {
+  color: var(--branding-color-2);
+}
+footer .social-link {
+  display: flex;
+  justify-content: center;
+}
 @media (max-width: 900px) {
   .bar li {
     margin-right: 0;
