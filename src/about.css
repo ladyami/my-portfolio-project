@@ -290,6 +290,9 @@ footer #in-hub:hover {
     text-align: center;
     justify-content: center;
   }
+  .container {
+    padding: 50px 20px;
+  }
   #my-name {
     font-size: 30px;
   }
